@@ -1,5 +1,5 @@
 {% set name = "spyboat" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc67b3c290e6328161464e124f9049e7b92b82b4f5656e643e9b003e3b9309ba
+  sha256: c695f33d20e3f2931818adef20ffc64143120c7cb09816753b286aaf019beb2d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
