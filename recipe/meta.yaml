@@ -1,5 +1,5 @@
 {% set name = "spyboat" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a23ca22e8d569dd564b94d53ff9625b6e9a3cf67ccb5105fb5151dc19122502f
-  
+  sha256: 07a40fb2fbc58a48c6d1df737939fa131ee7ab8956b0f35b86c9373ac5dba2e9
+
 build:
   noarch: python
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - flit-core >=2.3
   run:
     - python >=3.6
-    - numpy >=1.18    
+    - numpy >=1.18
     - matplotlib-base >=3.1
     - scikit-image >=0.14.0
     - pyboat >=0.8.22
